@@ -20,18 +20,19 @@ button.addEventListener("click", function () {
     for(var i= 0; i < 5; i++){
         rutor[i].innerHTML = anvandarOrd[i];
     
-    
-    }
-    
-    if(anvandarOrd[i]===valtOrd[i]){
+        if(anvandarOrd[i]===valtOrd[i]){
         rutor[i].style.background = "green";
         
     
-    }
-    else {
-        rutor[i].style.background = "red";
+        }
+        else {
+            rutor[i].style.background = "red";
+
+        }
+
     
     }
-
+    
+    
 
 })
