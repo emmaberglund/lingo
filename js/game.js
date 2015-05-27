@@ -23,13 +23,13 @@ button.addEventListener("click", function () {
     
     }
     
-    if(valtOrd===anvandarOrd){
-        alert("GRATTIS!!");
+    if(anvandarOrd[i]===valtOrd[i]){
+        rutor[i].style.background = "green";
         
     
     }
     else {
-        alert("OBS! FÖRSÖK IGEN!")
+        rutor[i].style.background = "red";
     
     }
 
