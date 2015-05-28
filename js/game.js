@@ -5,6 +5,7 @@ var ordlista = ["mjauu", "malin", "banan"];
 var valtOrd = ordlista[Math.floor(Math.random()*3)];
 
 console.log(valtOrd);
+var points = 0;
 
 
 /*Låt användaren gissa ordet */
@@ -21,7 +22,7 @@ button.addEventListener("click", function () {
         rutor[i].innerHTML = anvandarOrd[i];
     
     
-    }
+    
     
     if(anvandarOrd[i]===valtOrd[i]){
         rutor[i].style.background = "green";
@@ -32,6 +33,14 @@ button.addEventListener("click", function () {
         rutor[i].style.background = "red";
     
     }
-
+        
+}
+    
+    if (valtOrd === anvandarOrd){
+            points += 5000;
+            alert("GRATTIS, DU VANN " + points + " kr");
+            
+        
+        }
 
 })
