@@ -5,6 +5,7 @@ var ordlista = ["mjauu", "malin", "banan"];
 var valtOrd = ordlista[Math.floor(Math.random()*3)];
 
 console.log(valtOrd);
+var points = 0;
 
 
 var tries = 0;
@@ -14,6 +15,7 @@ var counts = 3;
 /*Låt användaren gissa ordet */
 
 var button = document.getElementsByTagName("button")[0];
+
 
    
     button.addEventListener("click", function () {
@@ -55,6 +57,7 @@ var button = document.getElementsByTagName("button")[0];
             
         }
     
+
 
   
 }       })
